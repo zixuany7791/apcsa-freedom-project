@@ -32,7 +32,7 @@ Because I heard people saying that GoDot is better than Unity in class. I decide
 With a little bit of researches of people's opinion about these two game engine, we decided to try GoDot today to see if GoDot can be a better tool to create our game. 
 
 
-I decided to follow this ![Tutorial](https://www.youtube.com/watch?v=QPeycNt29tY&list=PLfcCiyd_V9GH8M9xd_QKlyU8jryGcy3Xa) and to see how the starting progress looks for GoDot. In result, I don't see much difference since GoDot also have a lot of pre-made modules already that allows you to do a lot of stuff already without writing a single lines of code. Also, you can't really just play around with unity or Godot without any tutorial or guides to show you how it looks like and how it suppose to work. 
+I decided to follow this [Tutorial](https://www.youtube.com/watch?v=QPeycNt29tY&list=PLfcCiyd_V9GH8M9xd_QKlyU8jryGcy3Xa) and to see how the starting progress looks for GoDot. In result, I don't see much difference since GoDot also have a lot of pre-made modules already that allows you to do a lot of stuff already without writing a single lines of code. Also, you can't really just play around with unity or Godot without any tutorial or guides to show you how it looks like and how it suppose to work. 
 
 
 
