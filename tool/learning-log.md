@@ -34,6 +34,17 @@ With a little bit of researches of people's opinion about these two game engine,
 
 I decided to follow this [Tutorial](https://www.youtube.com/watch?v=QPeycNt29tY&list=PLfcCiyd_V9GH8M9xd_QKlyU8jryGcy3Xa) and to see how the starting progress looks for GoDot. In result, I don't see much difference since GoDot also have a lot of pre-made modules already that allows you to do a lot of stuff already without writing a single lines of code. Also, you can't really just play around with unity or Godot without any tutorial or guides to show you how it looks like and how it suppose to work. 
 
+### 11/11/24 Continue learning godot
+
+I have continue followed the video from last week and this is what I did: 
+1. First I add a CharacterBody2D node in Node2D, or scene.
+2. Then I need to add Sprite2D as a child node to CharacterBody2D to add a sprite picture in it so it looks like something. 
+3. Then I added CollisionShape2D as a child note to CharacterBodt2D to add a hitbox sort of thing to the sprite, I assign a shape and adjusted the size of the circle so that it matches the sprite size.
+4. Once I was done, I click on CharacterBody2D and "save branches as scene". Then all the child node from CharacterBody2D disappeared but now when I want to move the sprite, the hitbox comes along with it as well.
+
+The save branches as scene is very nice because it makes the scene a lot more cleaner and it is easier to organize as you can click into the GameObject for more nodes to show up. 
+
+
 
 
 
