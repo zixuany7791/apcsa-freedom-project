@@ -45,6 +45,29 @@ I have continue followed the video from last week and this is what I did:
 The save branches as scene is very nice because it makes the scene a lot more cleaner and it is easier to organize as you can click into the GameObject for more nodes to show up. 
 
 
+### 11/23/24 Creating first GDscript
+
+I have continued followed the video and this is what I did: 
+
+1. Created the first GDscript and use it to add movement to the sprite when we press certain keys.
+2. Went to project setting -> input map and created inputs for it to detect when running.
+3. The code that the video uses for movement seems to be outdated since the code is a bit different. So I pull up the godot documentation and use the code from there instead.
+```
+extends CharacterBody2D
+
+@export var speed = 400
+
+func get_input():
+	var input_direction = Input.get_vector("left", "right", "up", "down")
+	velocity = input_direction * speed
+
+func _physics_process(delta):
+	get_input()
+	move_and_slide()
+```
+
+
+
 
 
 
