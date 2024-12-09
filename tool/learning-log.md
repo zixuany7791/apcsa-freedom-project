@@ -66,6 +66,17 @@ func _physics_process(delta):
 	move_and_slide()
 ```
 
+### 12/8/24
+
+I have continued following the video and this is what I did: 
+
+1. added AnimationPlayer in CharacterBody2D
+2. because my sprite was not animated, I decided to rob the assest that the video is using.
+3. In AnimationPlayer, I created an idle animation for Sprite2D when the character is facing each direction by switching image at a certain amount of time (switch every 0.2s for a total of 0.4s).
+4. You can change how the animation runs with the button next to the total animation time. For example, you can make it run like a loop or make it run like pingpong where it goes to the right and left.
+5. In AnimationPlayer, I created an walking animation for Sprite2D when the character is facing each direction (switching every 0.1s for a total of 0.3s)
+
+It is very interesting how animation works because it kinda shows that make something to have movement is basically switching images every miliseconds or every frames. The shorter time it take to switch image, the smoother it will looks but it can also means faster. 
 
 
 
