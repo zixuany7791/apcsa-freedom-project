@@ -80,7 +80,7 @@ It is very interesting how animation works because it kinda shows that make some
 
 ### 12/23/24
 
-By watching ![this tutorial](https://www.youtube.com/watch?v=fZ-CJIYPFMI), we have sucessfully created our project and have my partners to also be able to code in the project. Godot are mostly for solo developers therefore we have to use combine github and godot to be able to code with partners.
+By watching [this tutorial](https://www.youtube.com/watch?v=fZ-CJIYPFMI), we have sucessfully created our project and have my partners to also be able to code in the project. Godot are mostly for solo developers therefore we have to use combine github and godot to be able to code with partners.
 * Created a sprite where players will control throughout the game
 * added movement script onto the sprite.
 
