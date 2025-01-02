@@ -78,8 +78,16 @@ I have continued following the video and this is what I did:
 
 It is very interesting how animation works because it kinda shows that make something to have movement is basically switching images every miliseconds or every frames. The shorter time it take to switch image, the smoother it will looks but it can also means faster. 
 
+### 12/23/24
 
+By watching ![this tutorial](https://www.youtube.com/watch?v=fZ-CJIYPFMI), we have sucessfully created our project and have my partners to also be able to code in the project. Godot are mostly for solo developers therefore we have to use combine github and godot to be able to code with partners.
+* Created a sprite where players will control throughout the game
+* added movement script onto the sprite.
 
+### 12/24/24
+
+* Added camera lock so that when the sprite moves, the camera follows the sprite as well. (The sprite stays in the center of the screen always)
+* Added a building by duplicating the sprite but removes the movement script. However this doesn't work well because they share the same scene so whenever I decided to change the size of the sprite, the building would change as well and so far we haven't figure it out how to make them have different scenes so we recreated the building so they don't share the same scene.
 
 
 
