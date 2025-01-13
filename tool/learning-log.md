@@ -89,7 +89,12 @@ By watching [this tutorial](https://www.youtube.com/watch?v=fZ-CJIYPFMI), we hav
 * Added camera lock so that when the sprite moves, the camera follows the sprite as well. (The sprite stays in the center of the screen always)
 * Added a building by duplicating the sprite but removes the movement script. However this doesn't work well because they share the same scene so whenever I decided to change the size of the sprite, the building would change as well and so far we haven't figure it out how to make them have different scenes so we recreated the building so they don't share the same scene.
 
+### 1/13/25
+Followed [this tutorial](https://www.youtube.com/watch?v=_57alDBagSY) to learn how to interact with objects. 
 
+* I find out the files are everywhere therefore I organized it a little bit by creating some folders
+* Added Area2D node to both the building and the player, however currently it does nothing right now.
+* Added a label that gives the message where when the player get close to the building, the label appears saying that you can press e to interact 
 
 
 <!-- 
