@@ -102,7 +102,7 @@ I have continued followed the tutorial to learn how to interact with objects.
 * Inside of Area2D of both player and building, I added a collisionShape2D so that when a player's interactable area touches another buildings interactable area. You can choose to interact with it.
 * In order to do that, I added scripts in the Area2D
 * When I run it, I realized nothing happens at all. While wondering why it doesn't, I checked the video's date and realized it is 2 years ago. So it was definitely outdated.
-* So I switched to another [tutorial](https://www.youtube.com/watch?v=pQINWFKc9_k) that is more recent 
+* So I switched to another [tutorial](https://www.youtube.com/watch?v=pQINWFKc9_k) that is more recent to see if it works. 
 ```GDScript
 extends Node2D
 @onready var interact_label: Label = $InteractLabel
@@ -140,6 +140,8 @@ func _on_interaction_area_area_entered(area: Area2D) -> void:
 func _on_interaction_area_area_exited(area: Area2D) -> void:
 	current_interactions.erase(area)
 ```
+By running this code, I have successfully interacted with a building despite nothing really happens because I haven't add any functionality to it yet. 
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
