@@ -142,6 +142,13 @@ func _on_interaction_area_area_exited(area: Area2D) -> void:
 ```
 By running this code, I have successfully interacted with a building despite nothing really happens because I haven't add any functionality to it yet. 
 
+### 3/9/25
+
+* Since Benjmain created the menu for construction building, I decided to add that menu to be part of my interaction so that when a player interact with something, the menu shows up.
+* In order for the interaction script to have access to the popup menu, I would need to use preload(scene) to do it.
+* After some copy pasting the popup menu script from benjamin onto interact script, I want to not have the player moving when the player is interacted with a building. In order to do that, I need to connect the movement script from the characterBody2D to interact script. Thankfully because the interact script is attached to the interaction component, which is a child node of characterBody2D. Therefore we can connect them by this line of code: `@onready var player = get_parent()`
+* In the movement.gd, I created a `set_interacting_state` function that returns a boolean. Then I will use that boolean at the beginning of the _physics_process function and do if `set_interacting_state` is true, returns nothing so it would end the function and the player would not be able to move.
+* Added esc key to stop interacting with a building, this allows players to move again. 
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
