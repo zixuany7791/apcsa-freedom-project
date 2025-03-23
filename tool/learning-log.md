@@ -148,7 +148,19 @@ By running this code, I have successfully interacted with a building despite not
 * In order for the interaction script to have access to the popup menu, I would need to use preload(scene) to do it.
 * After some copy pasting the popup menu script from benjamin onto interact script, I want to not have the player moving when the player is interacted with a building. In order to do that, I need to connect the movement script from the characterBody2D to interact script. Thankfully because the interact script is attached to the interaction component, which is a child node of characterBody2D. Therefore we can connect them by this line of code: `@onready var player = get_parent()`
 * In the movement.gd, I created a `set_interacting_state` function that returns a boolean. Then I will use that boolean at the beginning of the _physics_process function and do if `set_interacting_state` is true, returns nothing so it would end the function and the player would not be able to move.
-* Added esc key to stop interacting with a building, this allows players to move again. 
+* Added esc key to stop interacting with a building, this allows players to move again.
+
+
+### 3/23/25
+
+Since we have testbuild.gd that creates a building whenever we left click, we tries to combine it with interaction_component.gd and buildingmenu.gd so that it can only create a building whenever the player interact with the building and choose what building they want to create.
+* We tries by sending a signal when the player choose what building they want to construct so when the testbuild.gd receive the signal, it can construct the building. However this didn't work very effectively.
+* By thinking this throughly, I realized that it is possible that we combine the testbuild.gd with buildingmenu.gd into one script so you don't need the signal, you can just build after the player place down the building.
+
+Afterwards, in order for the player to have a better idea of where they want to place their building. I wanted to have them seeing the entire map so they can have a better idea of where they want to place the building. 
+* Created another Camera2D node called MapCamera
+* Make it zoomed out, but because our tilemap is square meanwhile the camera isn't so what we did is we zoomed out either way.
+* add swap functions in the interaction_component.gd for when interact with the building, it switches to the map camera meanwhile switches back when the player exit out of the interaction.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
