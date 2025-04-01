@@ -161,6 +161,23 @@ Afterwards, in order for the player to have a better idea of where they want to 
 * Created another Camera2D node called MapCamera
 * Make it zoomed out, but because our tilemap is square meanwhile the camera isn't so what we did is we zoomed out either way.
 * add swap functions in the interaction_component.gd for when interact with the building, it switches to the map camera meanwhile switches back when the player exit out of the interaction.
+
+### 3/31/25
+
+This week, our plans look like this: 
+* Make the building sprite move with the mouse (Benjamin)
+* Buildings should not be able to stack (Me)
+
+Because I likes to procrastinate to the last day, by the time I started working on the project, Benjamin already did the first one but there are some flaws that still needed to be fix. 
+
+By looking over his code, and testing out the code. I have found out that after the player stop interacting with the building, the building that is suppose to follow the mouse doesn't disappear, when it pass by the player, rather than going through the player, it pushes the player instead. 
+
+So in order for that to not happen, I need to export the `building_menu.gd` and imported in `interaction_component.gd` so I can use the function `cancel_building_placement()` in `interaction_component.gd` that when I press escape or exit interaction. The building will stop following the mouse. 
+
+After fixing some flaws for Benjamin, I started what I should be doing today, fixing the overlap issue of the building. In order to that, I remember that P5JS has this dist function that measure the distance between two points. So I went on the godot documentation to see if there are this type of function. Thankfully, it exists and it is called `distance_to()` So all I need to do is add all the buildings location that are in the game into an array and use a for loop to measure the distance between the building that the player is trying to place down to all the building that is created in the game. If it is less than 45, then they cannot place the building there. 
+
+
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
