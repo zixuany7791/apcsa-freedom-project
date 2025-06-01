@@ -12,6 +12,7 @@ I also used some of the time that I was suppose to work on the elevator pitch in
 We have created a very amazing project but we didn't really tell people how amazing it actually is. We have introduced them our project in a very lame way that makes our project looks bad and I feel very disappointed in myself for that. Throughout this time, I have realized my needs in practice on skills such as communication and time management, I didn't came into EXPO prepared to give a good elevator pitch to show how good our project is and I didn't communicate with my partners about elevator pitch, which ended up the elvator pitch being very messy. 
 
 [Link](https://docs.google.com/presentation/d/1o1J2jjSPWHZM6Ct8P2ob6UwUpwdKB43gpU11VMH_J6w/edit?slide=id.g35c5c1261ee_0_5#slide=id.g35c5c1261ee_0_5) to our slides
+
 [Link](https://github.com/zixuany7791/The-New-Settlement/blob/main/README.md) to our elevator pitch
 
 [Previous](entry05.md)
